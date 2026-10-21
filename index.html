@@ -90,6 +90,33 @@
       .shell{width:min(100% - 28px,1240px)}.hero{min-height:800px;border-radius:0 0 30px 30px;background-position:62% center}.hero-inner{padding:110px 0 48px}h1{font-size:clamp(3.15rem,17vw,5rem);line-height:.91}.hero-copy{font-size:1.05rem}.stats{grid-template-columns:repeat(2,1fr);margin-top:34px}.stat{border:0}.stat:nth-child(even){border-left:1px solid #ffffff2e}.stat:nth-child(n+3){border-top:1px solid #ffffff2e}.flight-group,.panel-head,.day-head,.day-grid,.map-bar{padding-left:21px;padding-right:21px}.map-gallery{display:flex;gap:14px;scroll-snap-type:x mandatory;margin-right:-14px;padding-right:14px}.map-card{flex:0 0 min(88vw,520px);scroll-snap-align:start}.map-card-head{min-height:118px}.route-panel{padding:27px 22px}.route-panel:after{display:none}.day-card:hover{transform:none}.evidence-card img{height:215px}.quick-access-card{padding:22px 18px}.quick-access-head{display:block}.quick-access-head p{margin-top:8px}.tab-list{flex-wrap:nowrap;overflow-x:auto;padding:2px 0 8px;scrollbar-width:none}.tab-list::-webkit-scrollbar{display:none}.jump-tab{flex:0 0 auto}.photo-story-head{display:block}.photo-story-head .section-intro{margin-top:8px}.photo-grid{display:flex;overflow-x:auto;gap:13px;margin-right:-14px;padding-right:14px;scroll-snap-type:x mandatory}.photo-tile,.photo-tile:first-child{flex:0 0 min(84vw,520px);height:390px;grid-row:auto;scroll-snap-align:start}.adventure-grid{grid-template-columns:1fr}.planning.major-collapsible>.major-section-content{grid-template-columns:1fr}}
     @media(max-width:520px){.hero{min-height:760px}.hero-inner h1{font-size:clamp(3rem,13.5vw,4.25rem);line-height:.94;text-wrap:wrap}.eyebrow{max-width:100%;line-height:1.35}.actions{display:grid}.hero .button{width:100%}.stats{padding:8px 6px}.stat{padding:10px 12px}.stat strong{font-size:1.45rem}.stat span{font-size:.64rem}.nav{padding:9px 0}main{padding-top:44px}.section-heading{font-size:2.35rem}.panel,.day-card{border-radius:22px}.flight-card{gap:7px}.time{font-size:1.2rem}.flight-arrow:after{content:"──▶"}.map-card{flex-basis:92vw}.major-section-toggle{padding:17px 18px}.major-toggle-copy strong{font-size:1.35rem}.major-toggle-state>span:first-child{display:none}}
     @media(max-width:820px){.shell{width:min(calc(100% - 28px),1240px)}}
+    /* Compact 2027 refresh: quieter surfaces and a denser day-by-day view */
+    body{font-size:17px;background:radial-gradient(circle at 8% 22%,rgba(36,167,160,.055),transparent 26rem),#f7f6f2}
+    .shell{width:min(1180px,calc(100% - 44px))}
+    main{padding-top:50px}
+    .hero{min-height:min(760px,90svh);border-radius:0 0 32px 32px;box-shadow:0 18px 50px rgba(5,35,43,.18)}
+    .hero-inner{padding:clamp(100px,16vh,155px) 0 clamp(48px,7vh,68px)}
+    .panel,.day-card,.planning-card,.budget-card,.evidence-card,.flight-group{border-radius:20px;box-shadow:0 10px 30px rgba(16,45,49,.065)}
+    .major-section-toggle{padding:17px 20px;border-radius:18px;box-shadow:0 8px 24px rgba(16,45,49,.055)}
+    .major-toggle-copy strong{font-family:Inter,Avenir Next,ui-sans-serif,system-ui,sans-serif;font-size:clamp(1.25rem,2.5vw,1.75rem);font-weight:760;letter-spacing:-.025em}
+    .major-chevron{width:30px;height:30px}
+    .major-collapsible.panel>.major-section-toggle,.major-collapsible.panel:not(.is-major-open)>.major-section-toggle{border-radius:19px}
+    .major-collapsible.panel.is-major-open>.major-section-toggle{border-radius:19px 19px 0 0}
+    .days{gap:12px}
+    .day-card{border-radius:18px;box-shadow:0 7px 22px rgba(16,45,49,.055)}
+    .day-card:hover{transform:translateY(-1px);box-shadow:0 12px 30px rgba(16,45,49,.085)}
+    .day-card:before{width:3px}
+    .day-head{align-items:center;gap:14px;padding:17px 20px 16px;background:linear-gradient(115deg,#fffefb,#f5f8f6)}
+    .day-kicker{margin-bottom:2px;font-size:.66rem;letter-spacing:.11em}
+    .day-head h2{font-family:Inter,Avenir Next,ui-sans-serif,system-ui,sans-serif;font-size:clamp(1.25rem,2.4vw,1.75rem);font-weight:760;line-height:1.2;letter-spacing:-.03em}
+    .tags{gap:5px}.tag{padding:4px 8px;font-size:.62rem}.day-toggle{padding:6px 10px;font-size:.7rem}
+    .day-lede{padding:16px 22px 0;font-family:inherit;font-size:.88rem;font-style:normal}
+    .day-grid{gap:18px 24px;padding:18px 22px 22px}
+    .block h3{margin-bottom:9px;font-size:.67rem}.item{margin-bottom:9px}.item strong{font-size:.88rem}.item p{font-size:.8rem}
+    .stay{padding:10px 12px;border-radius:10px}.map-bar{padding:10px 22px}.map-bar p{font-size:.78rem}
+    #must-do.major-collapsible{margin-bottom:18px}
+    #must-do.major-collapsible>.major-section-toggle{background:#fffdf9}
+    @media(max-width:820px){.shell{width:min(calc(100% - 26px),1180px)}.hero{min-height:700px}.day-head{padding:16px 17px}.day-grid{padding:16px 18px 20px}.day-lede{padding:14px 18px 0}.map-bar{padding:10px 18px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.day-card,.journey-map img,.photo-tile img,.day-toggle span{transition:none}.button:hover,.day-card:hover,.journey-map:hover img,.photo-tile:hover img{transform:none}}
     @media print{.hero{min-height:auto;border-radius:0;background:#0b3e4b!important}.hero-inner{padding:32px 0}.map-card{box-shadow:none}.day-card:hover{transform:none}.day-card.is-collapsible>.day-lede,.day-card.is-collapsible>.day-grid,.day-card.is-collapsible>.map-bar{display:block}.day-card.is-collapsible>.day-grid{display:grid}.day-toggle,.itinerary-tools,.flight-proof>summary,.major-section-toggle{display:none}.flight-proof .flight-evidence{display:grid}.major-section-content[hidden]{display:block!important}.major-section-content{padding-top:0}}
   </style>
@@ -476,13 +503,13 @@
     <section class="budget-section" id="budget">
       <p class="section-title">Already-booked budget</p>
 
-      <h2 class="section-heading">Known costs—with the revised items clearly flagged</h2>
+      <h2 class="section-heading">Known costs and open items</h2>
 
-      <p class="section-intro">The old total is no longer reliable because the domestic flights are gone, the rental now starts a day earlier, and the 8 March Christchurch night is not yet priced here. Existing reservations remain listed without publishing private flight-booking data.</p>
+      <p class="section-intro">The rental is now confirmed for 9–22 March. The total still needs the final flight receipt and the 8 March Christchurch stay; private booking details are not stored here.</p>
 
       <div class="budget-cards">
         <div class="budget-card primary">
-          <span>Working trip total</span><strong>Recalculate</strong><small>After rental and 8 March stay are confirmed</small>
+          <span>Working trip total</span><strong>Recalculate</strong><small>After the flight receipt and 8 March stay are added</small>
         </div>
 
         <div class="budget-card">
@@ -561,11 +588,11 @@
               <tr>
                 <td><strong>Rental car</strong></td>
 
-                <td>₹26,491.80 booking value + ₹944.15 pickup fee</td>
+                <td>A Rentals · Toyota Prius or similar · 9–22 March</td>
 
-                <td class="amount"><strong>₹27,435.95</strong></td>
+                <td class="amount"><strong>≈ ₹35,868</strong><small>NZD 484.54 rental + ₹9,846.68 coverage</small></td>
 
-                <td>Old voucher amount; reconfirm after changing pickup to 9 March and drop-off to 18:00 on 22 March</td>
+                <td>Rental is payable at pickup; Full Coverage is already paid. Unlimited mileage included.</td>
               </tr>
 
               <tr>
@@ -595,7 +622,7 @@
 
                 <td class="amount"><strong>Pending</strong></td>
 
-                <td>Requires final flight receipt, revised rental price and 8 March accommodation</td>
+                <td>Requires the final flight receipt and 8 March accommodation</td>
               </tr>
             </tbody>
           </table>
@@ -606,7 +633,7 @@
         <span>＋</span>
 
         <div>
-          <strong>Not yet included:</strong> the 8 March Christchurch night, any revised rental charge, food, fuel, other paid activities, parking, tolls and shopping. The NZD 2,000 rental deposit (about ₹1,11,145 on the old voucher) is a temporary card hold, not trip spend.
+          <strong>Not yet included:</strong> the 8 March Christchurch night, food, fuel, other paid activities, parking, tolls and shopping. The NZD 1,000 rental deposit (about ₹53,705 on the voucher) is a temporary card hold, not trip spend.
         </div>
       </div>
 
@@ -945,30 +972,30 @@
         <div>
           <p class="section-title">Rental car</p>
 
-          <h2>Snap Rentals · Suzuki Swift or similar</h2>
+          <h2>A Rentals · Toyota Prius or similar</h2>
 
-          <p class="route-string">Compact automatic · five seats · unlimited mileage · full-to-full fuel</p>
+          <p class="route-string">Compact Elite hybrid automatic · five seats · unlimited mileage · full-to-full fuel · additional driver included</p>
         </div><span class="status paid">Booked</span>
       </div>
 
       <div style="padding:23px">
         <div class="rental-grid">
           <div class="rental-stat">
-            <strong>Pick-up</strong>9 Mar · morning<br>
-            170 Orchard Road, Harewood<br>
-            Confirm exact collection slot
+            <strong>Pick-up</strong>9 Mar · 09:00<br>
+            Christchurch Airport shuttle<br>
+            Collect luggage, then use the supplier shuttle
           </div>
 
           <div class="rental-stat">
-            <strong>Drop-off</strong>22 Mar · by 18:00<br>
-            Same Christchurch location<br>
-            Allows 3 hr 10 before the 21:10 flight
+            <strong>Drop-off</strong>22 Mar · plan for 18:00<br>
+            Voucher deadline: 19:00<br>
+            Return earlier for the 21:10 flight
           </div>
 
           <div class="rental-stat">
-            <strong>Cost</strong>Existing voucher amount is retained below<br>
-            Reconfirm the revised 9–22 March duration<br>
-            <b>Budget may change</b>
+            <strong>Cost</strong>NZD 484.54 at pickup (≈ ₹26,021)<br>
+            Full Coverage paid: ₹9,846.68<br>
+            <b>Airport surcharge and taxes included</b>
           </div>
         </div>
 
@@ -976,7 +1003,7 @@
           <span>💳</span>
 
           <div>
-            <strong>Card capacity:</strong> the voucher requires a physical card in the main driver’s name and a NZD 2,000 security deposit hold (approximately ₹1,11,145). Card fees may apply. Full Coverage of ₹7,557.90 is included within the voucher’s booking value, but the rental company may still charge first and require a later reimbursement claim.
+            <strong>Bring to pickup:</strong> voucher, passport, physical driving licence, any required physical IDP, and a physical credit card in the main driver’s name. The NZD 1,000 deposit is about ₹53,705. Debit, prepaid, virtual and American Express cards are not accepted. Full Coverage is included, but damage claims work by reimbursement after the rental company charges you.
           </div>
         </div>
       </div>
@@ -1075,9 +1102,9 @@
           <div>
             <p class="section-title">Must-do checklist</p>
 
-            <h2>Trip anchors worth protecting</h2>
+            <h2>Trip highlights</h2>
 
-            <p class="route-string">Tick these off as you travel. Prices cover two adults; parking rates are current planning figures and should be rechecked for March 2027.</p>
+            <p class="route-string">The main stops and bookings in one checklist. Prices are for two; recheck parking charges closer to the trip.</p>
           </div>
         </div>
 
@@ -1330,7 +1357,7 @@
             </div>
           </div>
 
-          <p class="day-lede">Collect the car in the morning. If everyone feels rested and the weather is clear, make Akaroa the first scenic day; otherwise stay in Christchurch and save energy for Arthur’s Pass.</p>
+          <p class="day-lede">Collect the car at 09:00. If everyone feels rested and the weather is clear, make Akaroa the first scenic day; otherwise stay in Christchurch and save energy for Arthur’s Pass.</p>
 
           <div class="day-grid">
             <div class="block">
@@ -1340,7 +1367,7 @@
                 <span>🚗</span>
 
                 <div>
-                  <strong>Morning · Collect rental car</strong>
+                  <strong>09:00 · Collect rental car</strong>
 
                   <p>Complete the condition photos, check fuel and insurance rules, and practise left-side driving before leaving the city.</p>
                 </div>
@@ -2572,7 +2599,7 @@
         <ul class="checklist" data-save-checks="">
           <li><input type="checkbox"><span>Confirm or extend Christchurch accommodation for the night of 8 March.</span></li>
 
-          <li><input type="checkbox"><span>Reprice the rental for pickup on 9 March and return by 18:00 on 22 March.</span></li>
+          <li><input type="checkbox"><span>Save the rental voucher offline and confirm the airport-shuttle pickup point after collecting luggage.</span></li>
 
           <li><input type="checkbox"><span>Record every accommodation’s free-cancellation deadline in the ledger.</span></li>
 
@@ -2615,6 +2642,7 @@
     {id:'rental'},
     {id:'adventures'},
     {id:'itinerary'},
+    {id:'must-do',title:'Trip highlights',kicker:'Quick checklist'},
     {id:'planning-tools',title:'Planning & live checks',kicker:'Before you travel'}
   ];
   var majorSections=[];
@@ -2682,7 +2710,10 @@
     var target=document.getElementById(decodeURIComponent(hash.slice(1)));
     if(!target){return}
     var major=target.closest('.major-collapsible');
-    if(major){setMajorOpen(major,true)}
+    while(major){
+      setMajorOpen(major,true);
+      major=major.parentElement?major.parentElement.closest('.major-collapsible'):null;
+    }
     if(target.classList.contains('day-card')){setOpen(target,true)}
     requestAnimationFrame(function(){target.scrollIntoView({block:'start'})});
   }
@@ -2694,7 +2725,10 @@
     var initialTarget=document.getElementById(decodeURIComponent(window.__tripInitialHash.slice(1)));
     if(initialTarget){
       var initialMajor=initialTarget.closest('.major-collapsible');
-      if(initialMajor){setMajorOpen(initialMajor,true)}
+      while(initialMajor){
+        setMajorOpen(initialMajor,true);
+        initialMajor=initialMajor.parentElement?initialMajor.parentElement.closest('.major-collapsible'):null;
+      }
       if(initialTarget.classList.contains('day-card')){setOpen(initialTarget,true)}
     }
     window.addEventListener('load',function(){
